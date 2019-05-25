@@ -1,0 +1,54 @@
+.modal {
+  width: auto !important;
+  max-width: 720px;
+  margin: auto;
+  .content {
+    display: flex;
+    flex-direction: column;
+    .header {
+      display: flex;
+      flex-direction: row;
+      box-shadow: 0px 1px grey;
+      padding-bottom: 10px;
+      .headerLeft {
+  
+      }
+      .headerRight {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: space-evenly;
+        padding: 10px;
+        .name {
+          display: flex;
+          justify-content: flex-start;
+          text-transform: uppercase;
+          font-weight: bold; 
+        }
+        .location { 
+          display: flex;
+          justify-content: flex-start;
+        }
+        .infos {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          & > span {
+            display: flex;
+            flex-direction: row;
+            word-wrap: none;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+    .descriptions {
+      display: flex;
+      flex-direction: column;
+      .introduce { 
+        padding-top: 10px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
